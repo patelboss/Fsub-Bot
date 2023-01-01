@@ -12,9 +12,9 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 app = Client(
     ":memory:",
-    api_id=Config.API_ID,
-    api_hash=Config.API_HASH,
-    bot_token=Config.BOT_TOKEN,
+    api_id=4063950,
+    api_hash=5ebe4b5c0a2af776bf5d2e52d7f5aaa4,
+    bot_token=1829969794:AAE7BRLnznbiLmWcI8qmw_GoudeGzSzZqHo,
     plugins=dict(root="ForceSubscribeBot"),
 )
 
