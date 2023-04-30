@@ -1,34 +1,25 @@
-import Config
-import logging
-from pyrogram import Client, idle
-from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
+import os
 
+class Config(object):
+	BOT_TOKEN = os.environ.get("BOT_TOKEN")
+	APP_ID = int(os.environ.get("APP_ID"))
+	API_HASH = os.environ.get("API_HASH")
+	DATABASE_URL = os.environ.get("DATABASE_URL")
+	SUDO_USERS = list(set(int(x) for x in ''.split()))
+	SUDO_USERS.append(853393439)
+	SUDO_USERS = list(set(SUDO_USERS))
 
-logging.basicConfig(
-    level=logging.WARNING, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
+class Messages():
+      HELP_MSG = [
+        ".",
 
+        "[🔔](https://imageup.me/2no) **FORCE SUBSCRIBE :**\n\nForce Group Members To Join A Specific Channel Before Sending Messages in The Group.\nI Will Mute Members if They Not Joined Your Channel And Tell Them To Join The Channel And Unmute Themself By Pressing A Button.",
+        
+        "[⚙](https://imageup.me/2no) **SETUP :**\n\nFirst Of All Add Me In The Group As Admin With Ban Users Permission And In The Channel As Admin.\n● Note: Only Creator Of The Group Can Setup Me.",
+        
+        "[⚙](https://imageup.me/2no) **COMMMANDS :**\n\n/ForceSubscribe - To Get The Current Settings.\n/ForceSubscribe no/off/disable - To Turn Of ForceSubscribe.\n/ForceSubscribe {Channel Username} - To Turn On And Setup The Channel.\n/ForceSubscribe clear - To Unmute All Members Who Muted By Me.\n\n● Note: /FSub Is An Alias Of /ForceSubscribe",
+        
+        "[👨‍💻](https://telegra.ph/Music-06-11-2) **DEVELOPED BY IG- @pankaj_ji_2.o **"
+      ]
 
-app = Client(
-    ":memory:",
-    api_id=4063950,
-    api_hash=5ebe4b5c0a2af776bf5d2e52d7f5aaa4,
-    bot_token=1829969794:AAE7BRLnznbiLmWcI8qmw_GoudeGzSzZqHo,
-    plugins=dict(root="ForceSubscribeBot"),
-)
-
-
-# Run Bot
-if __name__ == "__main__":
-    try:
-        app.start()
-    except (ApiIdInvalid, ApiIdPublishedFlood):
-        raise Exception("Your API_ID/API_HASH is not valid.")
-    except AccessTokenInvalid:
-        raise Exception("Your BOT_TOKEN is not valid.")
-    uname = app.get_me().username
-    print(f"@{uname} Started Successfully!")
-    idle()
-    app.stop()
-    print("Bot stopped. Alvida!")
+      START_MSG = "**Hey! [👋](https://i.imgur.com/SmqQApH.jpg) [{}](tg://user?id={})**\n\n● I Can Force Members To Join A Specific Channel Before Writing Messages In The Group.\n● Learn More At 👉 /help"
