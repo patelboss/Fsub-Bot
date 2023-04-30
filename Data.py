@@ -8,42 +8,49 @@ class Data:
     START = """
 🍁Hello {}
 
-Welcome to {}
-
-I m Force Subscribe Bot !
+I m {}
 Send /help Visit My Help Menu
 
 🙈 For All Users 👇👇
 
 🔥 Powered By Emo Network ✓
 ☘️ Simple & Friendly BOT ✓
-🪤 Keep Original Appearance ✓
+💥 Keep Original Appearance ✓
 🎯 Group Supported ✓
 ⚡️ Fast Response ✓
 ✅ 24 Hour Active ✓
 🤩 New OS ✓
 
+▣————————————————————————▣
+
 🚀Powerd By @EmoBotDevolopers
 
+▣————————————————————————▣
     """
 
     # Home Button
     home_buttons = [
         [InlineKeyboardButton(text="🏛️ Return Home 🏛️", callback_data="home")],
-        [InlineKeyboardButton("☣ Emo Bot Devolopers ☣", url="https://t.me/EmoBotDevolopers")],
+        [InlineKeyboardButton("🔥 Emo Bot Devolopers 🔥", url="https://t.me/EmoBotDevolopers")],
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🪄Demo Bot", url="https://t.me/ImRishmika_Bot")],
+        [InlineKeyboardButton("▣——————————————————▣", url="https://youtube.com/@Rish_Bro/")],
         [
             InlineKeyboardButton("❔ How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("♾️ About ♾️", callback_data="about")
+            InlineKeyboardButton("🌺 About 🌺", callback_data="about")
         ],
-        [InlineKeyboardButton("👨‍💻 Devoloper 👨‍💻", url="https://t.me/ImRishmika")],
+        [InlineKeyboardButton("👨‍💻 Devoloper 👨‍💻", url="https://t.me/{OWNER_USERNAME}}")],
         [InlineKeyboardButton("💬 Support 💬", url="https://t.me/EmoBotSupport")],
     ]
 
+    
+    # Comming Soon
+
+COMMING = "Song Plugin is Comming Soon.. \n Join [Update Channel](t.me/EmoBotDevolopers) And Get Updates"
+
+COMMING2 = "Logo Plugin is Comming Soon.. \n Join [Update Channel](t.me/EmoBotDevolopers) And Get Updates"
     # Help Message
     HELP = """
 1) Add me as **Admin** to a group.
@@ -59,15 +66,19 @@ Example : `/fsub -1001742371821` or `/forcesubscribe -1001742371821`
 
 🔅 **Available Commands** 🔅
 
-/fsub - See current force subscribe chat
-/fsub chat_id/username - Force users to join the particular chat
-/settings - Change Group Settings
-/id - Get the chat id of any group or channel
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
+⟫ /fsub - See current force subscribe chat
+⟫ /fsub chat_id/username - Force users to join the particular chat
+⟫ /settings - Change Group Settings
+⟫ /id - Get the chat id of any group or channel
+⟫ /about - About The Bot
+⟫ /help - This Message
+⟫ /start - Start the Bot
+⟫ /hack - Hack Target Whatsapp Account
+⟫ /song - Comming Soon..
+⟫ /logo - Comming Soon..
 
-**Note** - You can also use `/forcesubscribe` instead of `/fsub`
+📌**Note** - You can also use `/forcesubscribe` instead of `/fsub`
+📌**Note** - Get All Updates [Here](t.me/EmoBotDevolopers)
 
 🔥 Powerd By [Emo Network](t.me/EmoBotDevolopers)
     """
@@ -86,7 +97,7 @@ A Telegram Force Subscribing Bot by @ImRishmika
 
 🍁Developer : @ImRishmika
 
-🖥️ Host Sever : Heroku 
+🖥️ Host Sever : Unknow
 
 
     """

@@ -6,10 +6,16 @@
 
 <p align="center"><a href="https://www.github.com//RishBropromax/Fsub-Bott"><img src="https://telegra.ph/file/0c8f543399c4b89cf8278.jpg" width="500"></a></p>
 
-Telegram bot to force users to subscribe a particular chat.
+<p align="center">Telegram bot to force users to subscribe a particular chat.</p>
 
-
-## Usage
+### ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣
+                                               
+#### 🎯Get VPS For Life Time                  
+☆ Video by [RishBroProMax](https://www.youtube.com/@Rish_Bro)             
+> 📌 Subscribe Please      <br>             
+[![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://www.youtube.com/watch?v=yytZstidW1s)   
+                                              
+### ▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣
 
 ### Deploy to Heroku
 
@@ -32,6 +38,8 @@ Complete guide on deploying @emFsub_Bot's clone on Heroku.
 
 ### Local Deploying
 
+Note :- `First update Your packeges`
+
 1. Clone the repo
    ```markdown
    git clone https://github.com/RishBroProMax/Fsub-Bot
@@ -43,7 +51,7 @@ Complete guide on deploying @emFsub_Bot's clone on Heroku.
 
 4. Enter the directory
    ```markdown
-   cd ForceSubscribeBot
+   cd Fsub-Bot
    ```
 5. Run the file
    ```markdown
@@ -59,6 +67,7 @@ Complete guide on deploying @emFsub_Bot's clone on Heroku.
 - `BOT_TOKEN` - Get this from [@BotFather](https://t.me/BotFather)
 - `DATABASE_URL` - Will be automatically added by Heroku.
 - `MUST_JOIN` - Username/ID of your telegram channel/group.
+- `OWNER_ID` - Give Your ID
 
 ## Functions
 
